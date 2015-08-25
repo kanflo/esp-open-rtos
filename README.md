@@ -78,7 +78,7 @@ Some binary libraries appear to contain unattributed open source code:
 * `core` contains source & headers for low-level ESP8266 functions & peripherals. `core/include/esp` contains useful headers for peripheral access, etc. Still being fleshed out. Minimal to no FreeRTOS dependencies.
 * `FreeRTOS` contains FreeRTOS implementation, subdirectory structure is the standard FreeRTOS structure. `FreeRTOS/source/portable/esp8266/` contains the ESP8266 port.
 * `lwip` and `axtls` contain the lwIP TCP/IP library and the axTLS TLS library ('libssl' in the esp8266 SDKs), respectively. See [Third Party Libraries](https://github.com/SuperHouse/esp-open-rtos/wiki/Third-Party-Libraries) wiki page for details.
-
+* `extras` contain drivers written for esp-open-rtos that are not considered "third party". A driver under `extras` can be added to an example program with the line `EXTRA_COMPONENTS=extras/my-driver` added to its makefile.
 
 ## Licensing
 
